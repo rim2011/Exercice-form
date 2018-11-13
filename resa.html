@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Livraison Rapide</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <div class="col-md-offset-3 col-sm-12 col-md-6">
+<form  action="recap.php" method="post" name="formulaire" enctype="multipart/form-data">
+    <div class="form-group">
+    <label>Nom:</label>
+    <input class="form-control" type="text" name="nom">
+    </div>
+    <div class="form-group">
+    <label>Prénom:</label>
+    <input class="form-control" type="text" name="prenom">
+    </div>
+    <div class="form-group">
+    <label>Nombre de sandwitchs:</label>
+    <input class="form-control"  type="number" name="nombreSandwitch" min="0">
+    </div>
+    <div class="form-group">
+    <label>Adresse:</label>
+    <textarea class="form-control" name="adresse"></textarea>
+    </div>
+    <div class="form-group">
+    <label>Type du sandwitch:</label>
+    <select class="form-control" name="select_box" >
+        <option value=" " selected hidden>default</option>
+        <option>viande</option>
+        <option>poulet</option>
+        <option>escalope</option>
+    </select>
+    </div>
+    <div class="form-group">
+    <label>Les ingrédients à ajouter:</label>
+    <input class="checkbox" type="checkbox" name="choix[]" value="harissa">harissa <br>
+    <input class="checkbox" type="checkbox" name="choix[]" value="salade"> salade<br>
+    <input class="checkbox" type="checkbox" name="choix[]" value="mayo">mayo<br><br>
+    </div>
+
+    <div class="form-group">
+        <label>CIN: </label>
+        <input type="File" class="form-control" name="fichier">
+    </div>
+
+    <button type="submit" name="valider" class="btn btn-default">submit</button>
+    </form>
+    </div>
+</div>
+</div>
+</body>
+</html>
